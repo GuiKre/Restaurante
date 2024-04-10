@@ -1,0 +1,41 @@
+package br.edu.up.modelos;
+
+public class Despensa {
+
+    //Relações TEM UM
+    private Gerente gerente;
+    private Ingrediente[] ingredientes;
+    
+    
+    public Despensa() {
+    }
+    
+    public Despensa(Gerente gerente) {
+        this.gerente = gerente;
+    }
+    
+    public Despensa(Ingrediente[] ingredientes) {
+        this.ingredientes = ingredientes;
+    }
+    
+    public Despensa(Gerente gerente, Ingrediente[] ingredientes) {
+        this.gerente = gerente;
+        this.ingredientes = ingredientes;
+    }
+    
+    
+    public Gerente getGerente() {
+        return gerente;
+    }
+    public void setGerente(Gerente gerente) {
+        this.gerente = gerente;
+    }
+    public Ingrediente[] getIngredientes() {
+        return ingredientes;
+    }
+    public void setIngredientes(Ingrediente[] ingredientes) {
+        this.ingredientes = ingredientes;
+    }
+
+    
+}
