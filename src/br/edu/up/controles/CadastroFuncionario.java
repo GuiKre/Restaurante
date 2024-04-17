@@ -17,4 +17,26 @@ public class CadastroFuncionario {
         f2.setNome("Carlos");
         this.funcionarios[1] = f2;
     }
+
+    public Funcionario[] getFuncionarios() {
+        return funcionarios;
+    }
+
+    public String getFuncionariosString() {
+        String funcString = "";
+        for(int i = 0; i < funcionarios.length; i++){
+            Funcionario f = funcionarios[i];
+            if (f != null){
+                funcString += "Nome: " + f.getNome() + "\n";
+            } else {
+                break;
+            }
+        }
+        return funcString;
+    }
+
+    public void setFuncionarios(Funcionario[] funcionarios) {
+        this.funcionarios = funcionarios;
+    }
+
 }
